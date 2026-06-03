@@ -1,0 +1,28 @@
+======================================================================
+PHASE 4 - G-STUDY VARIANCE DECOMPOSITION
+======================================================================
+Design: 3 domains x 3 elicitations, 90 responses (cell n 10-10).
+
+Variance components (point est | % of total | 95% bootstrap CI):
+  domain (d)                                    0.0000    0.0%  [0.0000, 0.0018]
+  elicitation (e)                               0.0026   17.2%  [0.0000, 0.0069]
+  domain x elicitation (de)                     0.0019   12.2%  [0.0000, 0.0085]
+  response within cell (p:de, residual)         0.0108   70.6%  [0.0072, 0.0122]
+
+Generalizability coefficients (95% bootstrap CI):
+  G_nested (over d AND e) = 0.909  [0.771, 0.956]
+  G_d      (over domain)  = 0.946  [0.759, 0.991]
+  G_e      (over elicit.) = 0.878  [0.729, 0.922]
+
+Largest variance source: within-cell signal.
+Elicitation share (17.2%) vs domain share (0.0%): elicitation dominates -> probe tracks HOW deception is elicited.
+
+Reading: within-cell (p:de) variance is treated as universe-score
+(context-invariant) signal; facet variance is measurement error for the
+claim 'the probe measures deceptiveness independent of context'. Low G
+=> probe score is driven by which context it saw, not a stable signal.
+
+Notes:
+  - var_d estimated negative (-0.0003744); truncated to 0 (standard for ANOVA variance components, indicates the true component is near zero / sampling noise).
+
+CAUTION: n=90 (reduced from planned ~600). CIs are wide; report them and avoid over-interpreting point estimates of small components.

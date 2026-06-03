@@ -1,0 +1,51 @@
+{
+  "n_total": 90,
+  "n_honest": 49,
+  "n_deceptive": 41,
+  "auroc_honest_vs_deceptive": 0.9009457441513191,
+  "config": {
+    "n_samples_per_scenario": 1,
+    "gen_batch_size": 2,
+    "max_new_tokens": 256,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "model": "meta-llama/Llama-3.3-70B-Instruct",
+    "detector_path": "/repo/example_results/instructed_pairs/detector.pt"
+  },
+  "per_cell_counts": {
+    "accountability_explanation__instructed_deception": 10,
+    "accountability_explanation__instrumental_pressure": 10,
+    "accountability_explanation__role_based_social_dynamics": 10,
+    "factual_qa__instructed_deception": 10,
+    "factual_qa__instrumental_pressure": 10,
+    "factual_qa__role_based_social_dynamics": 10,
+    "reporting_evaluation__instructed_deception": 10,
+    "reporting_evaluation__instrumental_pressure": 10,
+    "reporting_evaluation__role_based_social_dynamics": 10
+  },
+  "per_label_counts": {
+    "deceptive": 41,
+    "honest": 49
+  },
+  "per_cell_label_counts": {
+    "accountability_explanation__instructed_deception|deceptive": 6,
+    "accountability_explanation__instructed_deception|honest": 4,
+    "accountability_explanation__instrumental_pressure|deceptive": 4,
+    "accountability_explanation__instrumental_pressure|honest": 6,
+    "accountability_explanation__role_based_social_dynamics|deceptive": 5,
+    "accountability_explanation__role_based_social_dynamics|honest": 5,
+    "factual_qa__instructed_deception|deceptive": 5,
+    "factual_qa__instructed_deception|honest": 5,
+    "factual_qa__instrumental_pressure|deceptive": 4,
+    "factual_qa__instrumental_pressure|honest": 6,
+    "factual_qa__role_based_social_dynamics|deceptive": 3,
+    "factual_qa__role_based_social_dynamics|honest": 7,
+    "reporting_evaluation__instructed_deception|deceptive": 6,
+    "reporting_evaluation__instructed_deception|honest": 4,
+    "reporting_evaluation__instrumental_pressure|honest": 7,
+    "reporting_evaluation__instrumental_pressure|deceptive": 3,
+    "reporting_evaluation__role_based_social_dynamics|deceptive": 5,
+    "reporting_evaluation__role_based_social_dynamics|honest": 5
+  },
+  "failed_cells": []
+}

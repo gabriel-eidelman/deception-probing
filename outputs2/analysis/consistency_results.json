@@ -1,0 +1,41 @@
+{
+  "mode": "scores",
+  "cells": [
+    "accountability_explanation__instructed_deception",
+    "accountability_explanation__instrumental_pressure",
+    "accountability_explanation__role_based_social_dynamics",
+    "factual_qa__instructed_deception",
+    "factual_qa__instrumental_pressure",
+    "factual_qa__role_based_social_dynamics",
+    "reporting_evaluation__instructed_deception",
+    "reporting_evaluation__instrumental_pressure",
+    "reporting_evaluation__role_based_social_dynamics"
+  ],
+  "shift_summary": {
+    "domain": {
+      "mean_drop": 0.16779100529100532,
+      "std": 0.12100537848498723,
+      "n_pairs": 18
+    },
+    "elicitation": {
+      "mean_drop": 0.24186507936507942,
+      "std": 0.1630914966936559,
+      "n_pairs": 18
+    },
+    "joint": {
+      "mean_drop": 0.24308862433862435,
+      "std": 0.16718476243733832,
+      "n_pairs": 36
+    }
+  },
+  "gstudy_facet_pct": {
+    "domain": 0.0,
+    "elicitation": 17.246611635388287,
+    "de": 12.159888836033428
+  },
+  "coherence": {
+    "elicitation_variance_gt_domain": true,
+    "elicitation_drop_gt_domain": true,
+    "coherent": true
+  }
+}

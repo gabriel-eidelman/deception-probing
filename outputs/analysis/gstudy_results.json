@@ -1,0 +1,115 @@
+{
+  "design": {
+    "n_total": 180,
+    "domains": [
+      "accountability_explanation",
+      "factual_qa",
+      "reporting_evaluation"
+    ],
+    "elicitations": [
+      "instructed_deception",
+      "instrumental_pressure",
+      "role_based_social_dynamics"
+    ],
+    "n_domains": 3,
+    "n_elicitations": 3,
+    "n_cells_present": 9,
+    "n_cells_expected": 9,
+    "cell_sizes": {
+      "accountability_explanation__instructed_deception": 20,
+      "accountability_explanation__instrumental_pressure": 20,
+      "accountability_explanation__role_based_social_dynamics": 20,
+      "factual_qa__instructed_deception": 20,
+      "factual_qa__instrumental_pressure": 20,
+      "factual_qa__role_based_social_dynamics": 20,
+      "reporting_evaluation__instructed_deception": 20,
+      "reporting_evaluation__instrumental_pressure": 20,
+      "reporting_evaluation__role_based_social_dynamics": 20
+    },
+    "min_cell_n": 20,
+    "max_cell_n": 20,
+    "balanced": true,
+    "label_counts": {
+      "honest": 103,
+      "deceptive": 77
+    }
+  },
+  "method": "Henderson Type-I EMS variance components; random facets d, e; responses nested in d x e cells.",
+  "n_bar_harmonic_cell_size": 20.0,
+  "grand_mean": -7.020147932900323,
+  "variance_components": {
+    "var_d": {
+      "est": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "var_e": {
+      "est": 0.0019437116010105411,
+      "ci": [
+        0.0,
+        0.004278106084913104
+      ]
+    },
+    "var_de": {
+      "est": 0.0021645182495477443,
+      "ci": [
+        0.00067249417694379,
+        0.006016482926603925
+      ]
+    },
+    "var_resid_p_de": {
+      "est": 0.01052899127298508,
+      "ci": [
+        0.008343022761018228,
+        0.011906990742863362
+      ]
+    },
+    "total": {
+      "est": 0.014637221123543365,
+      "ci": [
+        0.011673564922961219,
+        0.017801123983729635
+      ]
+    }
+  },
+  "pct_of_total": {
+    "domain (d)": 0.0,
+    "elicitation (e)": 13.279239171185038,
+    "domain x elicitation (de)": 14.787767645774007,
+    "response within cell (p:de, residual)": 71.93299318304095,
+    "TOTAL": 100.0
+  },
+  "g_coefficients": {
+    "G_nested": {
+      "est": 0.922188404092388,
+      "ci": [
+        0.850724078652156,
+        0.9612189902179742
+      ]
+    },
+    "G_d": {
+      "est": 0.9358689611364566,
+      "ci": [
+        0.8330730445319916,
+        0.9772666988393889
+      ]
+    },
+    "G_e": {
+      "est": 0.8849080708827267,
+      "ci": [
+        0.79789163252866,
+        0.9263728003021593
+      ]
+    }
+  },
+  "bootstrap": {
+    "B_requested": 1000,
+    "B_effective": 1000,
+    "seed": 0
+  },
+  "truncation_notes": [
+    "var_d estimated negative (-0.0008801); truncated to 0 (standard for ANOVA variance components, indicates the true component is near zero / sampling noise)."
+  ]
+}

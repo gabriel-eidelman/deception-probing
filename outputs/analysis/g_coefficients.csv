@@ -1,0 +1,4 @@
+coefficient,description,value,ci_lo,ci_hi
+G_nested,generalize over domain AND elicitation,0.922188404092388,0.850724078652156,0.9612189902179742
+G_d,generalize over domain (elicitation fixed),0.9358689611364566,0.8330730445319916,0.9772666988393889
+G_e,generalize over elicitation (domain fixed),0.8849080708827267,0.79789163252866,0.9263728003021593
