@@ -112,11 +112,11 @@ def main():
     from dotenv import load_dotenv
     from sklearn.metrics import roc_auc_score
     from grading.grading import grade_response, bin_label  # local-only; not shipped to container
-    from scenarios import SCENARIOS
+    from scenarios import DATASET
 
     load_dotenv(Path(__file__).parent.parent / ".env")
     # 1. Generate + probe on the GPU
-    payload = generate_and_probe.remote(SCENARIOS)
+    payload = generate_and_probe.remote(DATASET)
 
     # 2. Grade each ACTUAL generated response locally.
     #    temperature=0.0 for deterministic ground-truth labeling (vs the

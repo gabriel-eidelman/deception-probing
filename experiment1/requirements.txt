@@ -1,4 +1,0 @@
-modal
-numpy
-matplotlib
-scikit-learn

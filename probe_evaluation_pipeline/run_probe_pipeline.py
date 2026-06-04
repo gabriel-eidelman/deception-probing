@@ -1,5 +1,5 @@
 """
-probe_pipeline_v2.py
+run_probe_pipeline.py
 ====================
 On-policy generation -> probe scoring -> GPT-4o grading -> analysis-ready artifacts.
 
@@ -285,14 +285,14 @@ def main():
     from sklearn.metrics import roc_auc_score
 
     from grading.grading import grade_response
-    from scenarios import SCENARIOS
+    from scenarios import DATASET
 
     load_dotenv(Path(__file__).parent.parent / ".env")
     outdir = Path("outputs")
     outdir.mkdir(exist_ok=True)
 
     # 1. Generation+probing: ONE container, model loaded once, loops over cells.
-    chunks = _chunk_by_cell(SCENARIOS)
+    chunks = _chunk_by_cell(DATASET)
     print(f"Processing {len(chunks)} cells in a single container: "
           f"{[c['cell'] for c in chunks]}")
     payload, failed = [], []

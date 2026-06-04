@@ -1,9 +1,0 @@
-quantity,type,estimate,ci_lo,ci_hi,pct_of_total
-Domain (d),variance component,0.0,0.0,0.0018,0.0
-Elicitation (e),variance component,0.0026,0.0,0.0069,17.2
-Domain x Elicitation (de),variance component,0.0019,0.0,0.0085,12.2
-Within-cell / residual (p:de),variance component,0.0108,0.0072,0.0122,70.6
-Total,variance component,0.0153,0.0114,0.02,100.0
-G_nested,G-coefficient,0.909,0.771,0.956,
-G_d,G-coefficient,0.946,0.759,0.991,
-G_e,G-coefficient,0.878,0.729,0.922,
