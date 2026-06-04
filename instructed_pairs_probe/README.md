@@ -1,0 +1,1 @@
+All credits for this probe go to the authors of this repo: https://github.com/ApolloResearch/deception-detection/

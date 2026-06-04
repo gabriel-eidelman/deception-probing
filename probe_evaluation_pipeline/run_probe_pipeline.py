@@ -285,7 +285,7 @@ def main():
     from sklearn.metrics import roc_auc_score
 
     from grading.grading import grade_response
-    from scenarios import DATASET
+    from dataset import DATASET
 
     load_dotenv(Path(__file__).parent.parent / ".env")
     outdir = Path("outputs")
